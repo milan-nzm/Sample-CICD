@@ -60,7 +60,7 @@ jobs:
       #   uses: docker/login-action@v2
       - name: Build Docker image
         run: |
-          docker build -t Demo .
+          docker build -t demo .
       - name: Run Trivy vulnerability scan
         uses: aquasecurity/trivy-action@master
         with:
